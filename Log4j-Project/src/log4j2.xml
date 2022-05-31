@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+    <Appenders>
+        <File name="INFO_DEBUG_WARNING_ERROR_FATAL" fileName="INFO_DEBUG_WARNING_ERROR_FATAL.log">
+            <PatternLayout pattern="%p %d{yyyy-MM-dd HH:mm:ss} %c{1}:%L - %m %n"/>
+        </File>
+        <File name="WARNING_ERROR_FATAL" fileName="WARNING_ERROR_FATAL.log">
+            <PatternLayout pattern="%p %d{yyyy-MM-dd HH:mm:ss} %c{1}:%L - %m %n"/>
+        </File>
+        <Console name="Console" target="SYSTEM_OUT">-->
+            <PatternLayout pattern="%p %d{yyyy-MM-dd HH:mm:ss} %c{1}:%L - %m %n"/>
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="ru.bstu.it32.nasypalov.lab2"/>
+        <Root level="all">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="INFO_DEBUG_WARNING_ERROR_FATAL" level="debug"/>
+            <AppenderRef ref="WARNING_ERROR_FATAL" level="warn"/>
+        </Root>
+    </Loggers>
+</Configuration>

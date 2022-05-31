@@ -1,0 +1,10 @@
+WARN 2020-06-16 20:35:24 Program:79 - Введено некорректное значение 
+WARN 2020-06-16 20:35:31 Program:95 - Введено некорректное значение 
+FATAL 2020-06-16 20:36:19 Program:155 - Введено недопустимое значение:  
+java.util.InputMismatchException: null
+	at java.util.Scanner.throwFor(Scanner.java:939) ~[?:?]
+	at java.util.Scanner.next(Scanner.java:1594) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2258) ~[?:?]
+	at java.util.Scanner.nextInt(Scanner.java:2212) ~[?:?]
+	at ru.bstu.it32.nasypalov.lab2.First.Positioning(First.java:151) [lab2/:?]
+	at ru.bstu.it32.nasypalov.lab2.Program.main(Program.java:107) [lab2/:?]
